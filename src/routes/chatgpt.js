@@ -1,6 +1,6 @@
 import express from 'express';
 import { chatWithAI } from '../controller/chatgptController.js';
-import { chatSchema, validate } from '../validation/messageValidator.js';
+import {chatSchema,validate} from "../Validation/messageValidator.js"
 
 const router = express.Router();
 
