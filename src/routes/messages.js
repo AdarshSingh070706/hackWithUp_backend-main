@@ -10,7 +10,7 @@ import {
 	messageSchema,
 	updateMessageSchema,
 	validate,
-} from '../validation/messageValidator.js';
+} from '../Validation/messageValidator.js';
 
 const router = express.Router();
 
