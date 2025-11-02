@@ -226,8 +226,8 @@ export const priceThroughAi = async (req, res) => {
       return res.status(404).json({ message: "User not found" });
     }
 
-    const city = user.location;
-    const crop = user.main_crop;
+    const city = user.location || Jhansi;
+    const crop = user.main_crop || Rice;
 
     if (!city || !crop) {
       return res.status(400).json({
