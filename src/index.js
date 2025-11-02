@@ -20,9 +20,9 @@ app.use(cookieParser());
 
 // CORS Configuration - Only call once!
 const corsOptions = {
-  origin: "https://hack-with-up-frontend.vercel.app", // Your React frontend URL
+  origin: ["https://hack-with-up-frontend.vercel.app/","http://localhost:5173"], // Your React frontend URL
   credentials: true, // Allow cookies
-  sameSite: "none",
+  sameSite: "strict",
   secure: true,
   methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
