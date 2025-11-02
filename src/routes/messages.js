@@ -6,12 +6,7 @@ import {
 	updateMessage,
 	deleteMessage,
 } from '../controller/messageController.js';
-import {
-	messageSchema,
-	updateMessageSchema,
-	validate,
-} from '../Validation/messageValidator.js';
-
+import {messageSchema,updateMessageSchema,validate} from "../Validation/messageValidator.js"
 const router = express.Router();
 
 
